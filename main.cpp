@@ -17,3 +17,5 @@ int main(int argc, char* argv[])
 	PyObject* pVal = PyObject_CallObject(pFunc, args);
 	double result = PyFloat_AsDouble(pVal);
 	std::cout << result;
+	return 0;
+}

@@ -10,7 +10,10 @@ _**Now let's dive into the config:**_
 
 Use MSVC compiler and not MinGW.
 
-You have to get the Portaudio.dll which can be found in an anaconda environment (I will link the .dll file here, if you got some problems getting it)
+You have to get the Portaudio.dll which can be found in an anaconda environment (I will link the .dll file here, if you got some problems getting it): 
+https://github.com/CppProgrammer23/Embed_Python_With_Cpp/releases/tag/v1.0
+
+PortAudio.dll is built for a 64-bit binary so you can't use a 32-bit architecture, you have to switch to 64-bit
 
 In the constructor, you have to put your directory file where you added the Python Scripts.
 

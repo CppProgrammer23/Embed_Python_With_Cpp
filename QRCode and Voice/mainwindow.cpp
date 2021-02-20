@@ -11,12 +11,12 @@ MainWindow::MainWindow(QWidget *parent)
     Py_Initialize();
 
     //1st method to set pat
-    const char* scriptDirectoryName = "D:/Users/idris/Doc/Qt Creator Projects C++/cppWithPython";
+    const char* scriptDirectoryName = "the path where the python scripts reside";
     PyObject* sysPath = PySys_GetObject("path");
     PyObject* path = PyUnicode_FromString(scriptDirectoryName);
     PyList_Insert(sysPath, 0, path);
     //2nd method to set path
-    //PySys_SetPath(L"D:/Users/idris/Doc/Qt Creator Projects C++/cppWithPython");
+    //PySys_SetPath(L"the path where the python scripts reside");
 
 
 }
@@ -62,9 +62,8 @@ void MainWindow::on_btnQrcode_clicked()
     PyObject* args = Py_BuildValue("(s)", "https://www.qt.io");
     //PyObject* pVal =
     PyObject_CallObject(pTalk,args);
-    //QPixmap pm("D:/Users/idris/Doc/Qt Creator Projects C++/cppWithPython/qt.png"); // <- path to image file
     QPixmap p;
-    p.load("D:/Users/idris/Doc/Qt Creator Projects C++/cppWithPython/qt.png",nullptr,Qt::AutoColor);
+    p.load("path to a qrcode",nullptr,Qt::AutoColor);// <- path to image file
     ui->labelqrcode->setPixmap(p);
     ui->labelqrcode->setScaledContents(true);
 }

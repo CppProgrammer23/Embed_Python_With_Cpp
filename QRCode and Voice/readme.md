@@ -4,7 +4,7 @@ _**Why I used Qt and not PyQt?**_
 
 Simple answer: this was dedicated to a mobile deployement and the cross platform I used it doesn't support Python, it does only support Python Scripts to link them with C++.
 
-an other answer: because I want to use the powerful of the 2 languages combined together.
+an other answer: because I want to use the powerf of the 2 languages combined together.
 
 _**Now let's dive into the config:**_
 

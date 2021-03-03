@@ -17,4 +17,4 @@ PortAudio.dll is built for a 64-bit binary so you can't use a 32-bit architectur
 
 In the constructor, you have to put your directory file where you added the Python Scripts.
 
-You have to an external library to link Python lib in .pro as I made.
+You have to add an external library to link Python lib in .pro as I made.
